@@ -1,0 +1,13 @@
+Joc Tetris pe matrice 8x8 Arduino
+Modul de joc:
+  Click pe joystick pentru a incpe jocul.
+  Piese de diverse forme apar si coboara pe matrice.(coboara: la fiecare interval Ij piesa Pj isi decrementeaza coordonata Y. I1=0.5s, Ij=I(j-1)-0.05 
+    Mod de actionare:
+      -Click pe joystick: Roteste piesa curenta in jurul centrului ei
+      -Joystick-drag left: Muta piesa in stanga 1 unitate fata de pozitia ei curenta
+      -Joystick-drag right: analog
+  O piesa se opreste din coborat, lasand-o pe urmatoarea sa apara atunci cand in urmatoarea ei configuratie iese din dimeniunile matricii sau suprapune o parte dintr-o veche piesa inca existenta
+  Cand o linie este ocupata complet, aceasta este 'arsa' lasandu-le pe urmatoarele sa mai coboare o unitate.
+  Scopul jocului este acela de a strange un scor cat mai mare.
+  Jocul se termina cand urmatoarea piesa care incearca sa apara este blocata inafara ecranului.
+  Cand jocul este terminat scorul este afisat timp de 4 secunde, dupa care totul se reia de la pasul 1.
